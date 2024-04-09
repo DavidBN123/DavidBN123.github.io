@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoClone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="topbar">
+        <span>
+            <div class="currencyShow">
+                <h3>0</h3>
+
+            </div>
+        </span>
+    </div>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+    </div>
+    
+    <main class="content">
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <!-- Sample game -->
+            <div class="game">
+                <img src="game-thumbnail.jpg" alt="Game Thumbnail">
+                <h3>Game Title</h3>
+                <p>Description of the game. This is where you put what the game is about.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Continue from your previous code -->
+<div class="group-search-create">
+    <button id="createGroupButton">Create Group</button>
+</div>
+
+<div class="search-section">
+    <input type="text" id="groupSearchInput" placeholder="Search for groups...">
+    <button id="groupSearchButton">Search</button>
+    <div id="groupSearchResults"></div>
+</div>
+
+
+<!-- Group Creation Modal (hidden by default) -->
+<div id="groupCreateModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Create a Group</h2>
+        <p>Cost: 25 Clone Coin</p>
+        <label for="groupName">Group Name:</label>
+        <input type="text" id="groupName" name="groupName" required>
+        <button id="confirmCreateGroup">Create</button>
+    </div>
+</div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
